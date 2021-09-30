@@ -1,0 +1,150 @@
+:root{
+    --cor-principal: #334756;
+    --cor-secundaria: #fea82f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: -webkit-radial-gradient(top, #f7f2e7, #d8d3cd, #797a7e);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 35fr 30fr 35fr;
+    grid-template-rows: 30fr 40fr 30fr;         
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.boxInfo{
+    grid-row: 2;
+    grid-column: 2; 
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--cor-principal);    
+    color:  var(--cor-secundaria);
+    font-family: 'Raleway', sans-serif;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2em;
+    padding: 5px;
+}
+
+.title > h1{
+    padding-bottom: 2px;
+    font-size: 2.5em;
+}
+
+.title > hr{
+    height: 2px;
+    width: 8em;
+    background-color: #d8d3cd;
+    opacity: 0.8;
+    border: none;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login{
+    width: 20vw;
+    height: 50vh;
+    text-align: left;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;    
+}
+
+.login > label {
+    margin-bottom: 0.4em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.login > input{
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #d8d3cd;
+    color: #393e46;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+#button{
+    width: 100%;
+    height: 7vh;
+    margin-top: 2.5em;
+    background-color:  var(--cor-secundaria);
+    color: #393e46;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 0;
+}
+
+#button:hover{
+    color:  var(--cor-secundaria);
+    background-color: #02595500;
+    border: 1.5px solid  var(--cor-secundaria);
+
+}
+
+.login > a{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.login > a:hover{
+    color:  var(--cor-secundaria);
+    opacity: 0.9; 
+    text-decoration: underline;
+    
+}
+
+ input:focus{
+    outline: 0;
+    box-shadow: 0 0 2px #bebfc4;
+}
+
+@media screen and (max-width: 1027px){
+	html{
+		font-size: 87.5%;  
+        letter-spacing: 87.5%;
+	}
+    body{
+        background-image: none;
+        background-color: #999898;
+    }
+
+}
+
+@media screen and (max-width: 623px){
+	html{
+		font-size: 87.5%;
+	}
+    body{
+        background-image: none;
+        background-color: #999898;
+    }
+
+}
+
